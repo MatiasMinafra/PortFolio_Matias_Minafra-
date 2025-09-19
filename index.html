@@ -2,10 +2,110 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi primer sitio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Matías Minafra</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hola, soy Matías 👋</h1>
-  <p>Mi primer sitio en GitHub Pages.</p>
+
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#conocimientos">Conocimientos</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#redes">Redes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Presentación -->
+  <section id="inicio">
+    <h1>Hola, soy Matías Agustín Minafra 👋</h1>
+    <p>Estudiante de programación en la UTN, actualmente en 2° año, apasionado por el desarrollo de software.</p>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil de Matías Minafra" class="perfil">
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Tengo 26 años y soy de Zona Norte. Estoy cursando la Tecnicatura en Programación en la UTN, y también realicé el curso de Maxiprograma Nivel 2, donde desarrollamos una aplicación en .NET y C#. Además, trabajé con bases de datos en SQL y estudié C++ en los primeros años de la carrera.</p>
+  </section>
+
+ <section id="conocimientos">
+  <h2>Conocimientos</h2>
+  <ul class="conocimientos-lista">
+    <li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="Logo C#" class="icono">
+      C# y .NET
+    </li>
+    <li>
+      <img src="https://img.freepik.com/vector-premium/imagen-vectorial-iconos-bases-datos-sql-puede-usar-alojamiento-web_120816-69919.jpg?semt=ais_incoming&w=740&q=80" alt="Logo SQL" class="icono">
+      SQL (bases de datos)
+    </li>
+    <li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="Logo C++" class="icono">
+      C++
+    </li>
+    <li>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Logo Git y GitHub" class="icono">
+      Git y GitHub
+    </li>
+  </ul>
+</section>
+  <!-- Proyectos -->
+  <!-- Proyectos -->
+<section id="proyectos">
+  <h2>Proyectos</h2>
+
+  <div class="card">
+    <h3>Aplicación en .NET y C#</h3>
+    <p>Proyecto final del curso Maxiprograma Nivel 2.</p>
+    <a href="https://github.com/MatiasMinafra/TPFinalNivel2_Minafra" target="_blank">Ver repositorio en GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Base de datos en SQL</h3>
+    <p>Diseño y creación de una base de datos relacional como práctica académica.</p>
+    <a href="https://github.com/tomga1/TpIntegradorBD2" target="_blank">Ver repositorio en GitHub</a>
+  </div>
+
+  <div class="card">
+    <h3>Portfolio online</h3>
+    <p>Este mismo sitio publicado en GitHub Pages.</p>
+    <a href="https://matiasminafra.github.io/PortFolio_Matias_Minafra-/" target="_blank">Visitar mi portfolio</a>
+  </div>
+</section>
+  <!-- Redes -->
+  <section id="redes">
+    <h2>Mis redes</h2>
+    <p>
+      <a href="https://github.com/matiasminafra" target="_blank">GitHub</a> |
+      <a href="#" target="_blank">LinkedIn (agregar cuando lo crees)</a>
+    </p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="mailto:minaframatias@gmail.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Portfolio de Matías Minafra</p>
+  </footer>
+
 </body>
 </html>

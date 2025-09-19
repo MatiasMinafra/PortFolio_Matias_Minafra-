@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+  padding-top: 60px; /* espacio para el menú fijo */
+}
+
+/* Menú */
+nav {
+  background: #222;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00aced;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+/* Foto */
+.perfil {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #00aced;
+}
+
+
+
+/* Proyectos */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #00aced;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0084b4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+/* Iconos de conocimientos */
+.conocimientos-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;           /* activa flexbox */
+  justify-content: center; /* centra todo en la fila */
+  gap: 40px;      
+}
+
+.conocimientos-lista li {
+  display: flex;
+  flex-direction: column;  /* imagen arriba, texto abajo */
+  align-items: center;
+  text-align: center;
+}
+
+.icono {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 5px;
+  border: 1px solid #ccc; /* opcional, para que se note el cuadrado */
+  border-radius: 10px;    /* opcional, bordes redondeados */
+  background: white;      /* relleno uniforme */
+}
