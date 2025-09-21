@@ -95,7 +95,6 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Iconos */
 .icono {
   width: 40px;
 }
@@ -130,25 +129,38 @@ h2 {
   background-color: #303f9f;
 }
 
+/* Iconos de tecnologías en proyectos */
+.tech-icons img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 /* Contacto */
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
+  gap: 12px;        /* menos espacio entre campos */
+  max-width: 400px; /* más proporcional */
   margin: 0 auto;
 }
 
 input, textarea {
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
   box-sizing: border-box;
+  font-size: 0.95rem; /* más proporcional */
+}
+
+textarea {
+  min-height: 100px;
 }
 
 button {
-  padding: 10px;
+  padding: 8px;
+  font-size: 1rem;
   background-color: #3f51b5;
   color: #fff;
   border: none;
@@ -161,6 +173,7 @@ button:hover {
   background-color: #303f9f;
 }
 
+/* Redes */
 .redes-icono {
   width: 24px;
   vertical-align: middle;
