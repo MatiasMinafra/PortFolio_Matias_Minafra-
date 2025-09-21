@@ -1,35 +1,27 @@
-/* Reset */
-* {
+/* Reset y tipografía */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* General */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
   color: #333;
-  padding-top: 60px; /* espacio para el menú fijo */
+  line-height: 1.6;
 }
 
 /* Menú */
 nav {
-  background: #222;
-  color: #fff;
-  padding: 15px 0;
-  position: fixed;
+  background-color: #3f51b5;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
+  margin: 0;
+  padding: 10px 0;
 }
 
 nav ul li {
@@ -40,114 +32,149 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #00aced;
+  color: #ffeb3b;
 }
 
-/* Secciones */
+/* Sección Inicio */
+#inicio {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #e3f2fd;
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Secciones generales */
 section {
   padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
-  color: #222;
+h2 {
   text-align: center;
+  margin-bottom: 40px;
+  color: #3f51b5;
 }
 
-/* Foto */
-.perfil {
-  width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 20px auto;
-  border: 3px solid #00aced;
+/* Conocimientos */
+.conocimientos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
 }
 
+.conocimientos-lista li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
+/* Iconos */
+.icono {
+  width: 40px;
+}
 
 /* Proyectos */
-.card {
-  background: white;
+#proyectos .card {
+  background-color: #fff;
   padding: 20px;
-  margin: 15px 0;
+  margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Formulario */
+#proyectos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#proyectos a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#proyectos a:hover {
+  background-color: #303f9f;
+}
+
+/* Contacto */
 form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-form label {
-  margin: 10px 0 5px;
-}
-
-form input, form textarea {
+input, textarea {
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-form button {
-  margin-top: 15px;
+button {
   padding: 10px;
+  background-color: #3f51b5;
+  color: #fff;
   border: none;
-  background: #00aced;
-  color: white;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
-  background: #0084b4;
+button:hover {
+  background-color: #303f9f;
+}
+
+.redes-icono {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#redes a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #222;
-  color: white;
-  margin-top: 20px;
-}
-/* Iconos de conocimientos */
-.conocimientos-lista {
-  list-style: none;
-  padding: 0;
-  display: flex;           /* activa flexbox */
-  justify-content: center; /* centra todo en la fila */
-  gap: 40px;      
-}
-
-.conocimientos-lista li {
-  display: flex;
-  flex-direction: column;  /* imagen arriba, texto abajo */
-  align-items: center;
-  text-align: center;
-}
-
-.icono {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  margin-bottom: 5px;
-  border: 1px solid #ccc; /* opcional, para que se note el cuadrado */
-  border-radius: 10px;    /* opcional, bordes redondeados */
-  background: white;      /* relleno uniforme */
+  background-color: #3f51b5;
+  color: #fff;
 }
