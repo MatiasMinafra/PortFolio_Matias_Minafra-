@@ -118,26 +118,32 @@
     </p>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="mailto:minaframatias@gmail.com" method="post" enctype="text/plain">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+<!-- Contacto -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form action="https://formsubmit.co/matiasminafra@hotmail.com" method="POST">
+    
+    <!-- Configuración oculta -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio!">
+    <input type="hidden" name="_captcha" value="false">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <!-- Campos visibles -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre completo" required>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" placeholder="Tu correo electrónico" required>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="Mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
 
-  <footer>
-    <p>&copy; 2025 - Portfolio de Matías Minafra</p>
-  </footer>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Portfolio de Matías Minafra</p>
+</footer>
 
 </body>
 </html>
